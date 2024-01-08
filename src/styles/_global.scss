@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $color-body-bg;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    font-family: $font-main;
+    color: $color-main-text;
+}
+
+.game-wrapper {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.game-wrapper::-webkit-scrollbar {
+    width: 7px;
+    background-color: $color-body-bg;
+}
+  
+.game-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #548ce0;
+}
+  
+.game-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 7px;
+  background-color: $color-body-bg;
+}
+
+.level-description {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+}

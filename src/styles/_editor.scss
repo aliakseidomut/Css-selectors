@@ -1,0 +1,134 @@
+.editor {
+    display: flex;
+    justify-content: center;
+    font-family: $font-editor;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #24211d;
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+.main {
+    display: flex;
+}
+
+.line-numbers {
+    width: 0;
+    line-height: 150%;
+    font-size: 14px;
+    font-family: $font-editor;
+    margin: 0;
+    padding:  10px 0 10px 35px;
+}
+
+.code-area {
+    padding: 10px;
+}
+
+.css-editor {
+    .line-numbers {
+        background-color: #e2e2e2;
+        color: #AAA;
+    }
+    .code-area {
+        background-color: white;
+    }
+    input {
+        outline: none;
+        border: none;
+    }
+    .enter-button {
+        background: #ddd;
+        display: block;
+        border-radius: 2px;
+        padding: 2px 7px 2px 7px;
+        color: #666;
+        border: solid 3px #999;
+        border-width: 1px 1px 6px 1px;
+        font-size: 9px;
+        cursor: pointer;
+        top: 7px;
+        right: 7px;
+        z-index: 999999;
+        margin-top: 5px;
+      }
+
+    .enter-button_active {
+        border-width: 1px 1px 1px 1px;
+        margin-top: 10px;
+    }
+}
+
+
+
+.html-viewer {
+    .line-numbers {
+        background-color: #1d1a16;
+    }
+    .code-area {
+        background-color: #1d1a16;
+    }
+
+    span {
+        &:hover {
+            cursor: default;
+            color: white;
+        }
+    }
+
+    .span-active {
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes shaking {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-5px);
+    }
+    20% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    60% {
+      transform: translateX(5px);
+    }
+    70% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    90% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.shaking {
+    animation: shaking 1s;
+}

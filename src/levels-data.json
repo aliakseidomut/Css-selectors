@@ -1,0 +1,284 @@
+[
+    {
+        "level":"1",
+        "description": "Select circles",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-1_1"
+            }, 
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-1_2"
+            }
+        ],
+        "rigthSelector": "circle"
+    },
+    {
+        "level":"2",
+        "description": "Select blue circle",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-2_1"
+            }, 
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-2_2"
+            },
+            {
+                "tagName": "circle",
+                "class": "blue",
+                "id": null,
+                "animation": true,
+                "elCode": "el-2_3"
+            }
+        ],
+        "rigthSelector": ".blue"
+    },
+    {
+        "level":"3",
+        "description": "Select red circle",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-3_1"
+            }, 
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": "red",
+                "animation": true,
+                "elCode": "el-3_2"
+            },
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-3_3"
+            }
+        ],
+        "rigthSelector": "#red"
+    },
+    {
+        "level":"4",
+        "description": "Select squares",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-4_1"
+            }, 
+            {
+                "tagName": "square",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-4_2"
+            },
+            {
+                "tagName": "square",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-4_3"
+            }
+        ],
+        "rigthSelector": "square"
+    },
+    {
+        "level":"5",
+        "description": "Select all items",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-5_1"
+            }, 
+            {
+                "tagName": "square",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-5_2"
+            },
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-5_3"
+            },
+            {
+                "tagName": "square",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-5_4"
+            }
+        ],
+        "rigthSelector": "*"
+    },
+    {
+        "level":"6",
+        "description": "Select red circle and blue square",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": "red",
+                "animation": true,
+                "elCode": "el-6_1"
+            }, 
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-6_2"
+            },
+            {
+                "tagName": "square",
+                "class": "blue",
+                "id": null,
+                "animation": true,
+                "elCode": "el-6_3"
+            }
+        ],
+        "rigthSelector": "#red,.blue"
+    },
+    {
+        "level":"7",
+        "description": "Select circle after square",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-7_1"
+            }, 
+            {
+                "tagName": "square",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-7_2"
+            },
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-7_3"
+            }
+        ],
+        "rigthSelector": "square~circle"
+    },
+    {
+        "level":"8",
+        "description": "Select all blue items after red item",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": "red",
+                "animation": false,
+                "elCode": "el-8_1"
+            }, 
+            {
+                "tagName": "square",
+                "class": "blue",
+                "id": null,
+                "animation": true,
+                "elCode": "el-8_2"
+            },
+            {
+                "tagName": "circle",
+                "class": "blue",
+                "id": null,
+                "animation": true,
+                "elCode": "el-8_3"
+            },
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-8_4"
+            }
+        ],
+        "rigthSelector": "#red~.blue"
+    },
+    {
+        "level":"9",
+        "description": "Select first blue item after red item",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": "red",
+                "animation": false,
+                "elCode": "el-9_1"
+            }, 
+            {
+                "tagName": "square",
+                "class": "blue",
+                "id": null,
+                "animation": true,
+                "elCode": "el-9_2"
+            },
+            {
+                "tagName": "circle",
+                "class": "blue",
+                "id": null,
+                "animation": false,
+                "elCode": "el-9_3"
+            }
+        ],
+        "rigthSelector": "#red+.blue"
+    },    
+    {
+        "level":"10",
+        "description": "Select green circle",
+        "elements": [
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": false,
+                "elCode": "el-10_1"
+            }, 
+            {
+                "tagName": "circle",
+                "class": null,
+                "id": null,
+                "animation": true,
+                "elCode": "el-10_2",
+                "attribute": "green='true'"
+            }
+        ],
+        "rigthSelector": "circle[green='true']"
+    }
+]
+

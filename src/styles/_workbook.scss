@@ -1,0 +1,85 @@
+.workbook-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.workbook {
+    display: inline-flex;
+    background-image: url('../assets/workbook-bg.jpg');
+    background-size: 100%;
+    background-position: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}   
+
+circle {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+*[green="true"] {
+    background-color: green;
+}
+
+square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition: .2s;
+}
+
+.item-active {
+    transform: scale(0.95, 0.95);
+}
+
+  
+.item-active::after {
+    width: max-content;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 6px;
+    content: attr(data-hint);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1em;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    transition: opacity 0.2s;
+    padding: 10px;
+}
+
+
+
+@keyframes increase-decrease {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.85);
+    }
+    100% {
+      transform: scale(1);
+    }
+}  
+
+.necessary-element {
+    animation: increase-decrease 3s infinite;
+}
